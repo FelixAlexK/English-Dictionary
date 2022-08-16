@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body onload="render()">
     <div class="layout">
-      <header class="header">
+      <header class="header_index">
         <span class="title">Dictionary</span>
         <nav>
-          <ul class="nav-links">
+          <ul class="nav_links">
             <li>
               <a class="active" id="index_link" href="index.html">Dictionary</a>
             </li>
@@ -22,8 +28,7 @@
       </header>
       <main class="main_index">
         <div class="main_index_content">
-          <ul id="dictionarylist" class="dictionary_list">
-          </ul>
+          <ul id="dictionarylist" class="dictionary_list"></ul>
         </div>
       </main>
     </div>
