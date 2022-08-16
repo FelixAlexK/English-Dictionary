@@ -33,7 +33,7 @@ li,a,span{
 header{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
 }
@@ -42,23 +42,23 @@ header{
   font-size: 20px;
 }
 
-.nav-links{
+.nav_links{
   list-style: none;
 }
 
-.nav-links li{
+.nav_links li{
   display: inline;
   padding: 0 20px;
   
 }
 
-.nav-links li a{
+.nav_links li a{
   transition: all 0.3s ease 0s;
   cursor: pointer;
   
 }
 
-.nav-links li a:hover{
+.nav_links li a:hover{
   color: #ff6e48
 }
 
