@@ -1,134 +1,131 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  --textColor: rgba(255, 255, 255, 0.87);
-  --backgroundColor: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: var(--textColor);
-  width: 100%;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-li,a,span{
-  text-decoration: none;
-}
+/* navbar */
 
-header{
+.header_index,
+.header_add {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
 }
 
-.title{
-  font-size: 20px;
+.title {
+  font-size: 2em;
 }
 
-.nav_links{
+.nav_links {
   list-style: none;
 }
 
-.nav_links li{
-  display: inline;
+.nav_links li,
+a {
+  text-decoration: none;
+}
+
+.nav_links li {
+  display: inline-block;
   padding: 0 20px;
-  
 }
 
-.nav_links li a{
+.nav_links a {
+  font-size: 1.2em;
+}
+
+.active {
+  border-bottom: solid white;
+}
+
+.active:hover {
   transition: all 0.3s ease 0s;
-  cursor: pointer;
-  
+  border-color: orangered;
 }
 
-.nav_links li a:hover{
-  color: #ff6e48
-}
-
-.active{
-  border-bottom: solid;
-  pointer-events: none;
-}
-
-
-
-.form_text{
-  height: 25vh;
+/* index content*/
+.main_index {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 5px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 2%;
+}
+.main_index_content {
+  text-align: justify;
 }
 
-.deText, .enText{
-  width: 50%;
-  border-radius: 2rem;
-  border-style: none;
-  border: solid 2px;
-  border-color: #ff6e48;
-  padding: 10px;
-}
 
-.save_button{
-  width: 25%;
-  border-radius: 2rem;
-  border-style: none;
-  cursor: pointer;
-  background-color: #ff6e48;
-  padding: 10px;
-}
-
-.save_button:hover{
-  background-color: #9b3f28 ;
-}
-
-.main_index_content{
-  display: block;
-}
-
-.dictionary_list{
+.dictionary_list li,
+a {
   list-style: none;
+}
+
+.dictionary_list li {
+  padding: 8px 0;
+  font-size: 1.5em;
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.05);
+}
+
+.dictionary_list li:hover {
+  border-bottom: 1.6px solid;
+  list-style: decimal;
+}
+
+.footer_index {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 30px;
   text-align: center;
 }
 
+/* add content*/
 
 
-.dictionary_list li{
-  font-size: 30px;
-  margin: 20px 0;
+.add_content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
 }
 
-.dictionary_list button{
-  width: 5%;
+.deText, .enText {
+  width: 100%;
+  padding: 12px 40px;
+  margin: 8px 0;
   border: none;
-  background-color: transparent;
-  color: red;
+  border-bottom: 2px solid white;
+}
+
+.deText:focus, .enText:focus {
+  outline-style: none;
+}
+
+.deText:hover ,.enText:hover {
+  border-color: orangered;
+}
+
+.save_button{
+  float: right;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-decoration: none;
   cursor: pointer;
-}
-
-.dictionary_list button:hover{
-
-  transition: all 0.3s ease 0s;
-  color: #ff6e48;
+  background-color: orangered;
+  margin: 4px 2px;
 
 }
 
-
+.save_button:hover{
+  border: solid transparent;
+}
