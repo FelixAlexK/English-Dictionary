@@ -17,14 +17,14 @@ function add() {
 
 function resizeDictionary() {
 
-    var main = document.getElementById('main').offsetHeight;
-    var sidebar = document.getElementById('dictionarylist').offsetHeight;
+    let main = document.getElementById('main').offsetHeight * 1.2;
+    let sidebar = document.getElementById('dictionarylist').offsetHeight;
     if (sidebar > main) {
         main = sidebar;
-        document.getElementById('main').style.height = document.getElementById('dictionarylist').style.height = main + 'px'
+        document.getElementById('main').style.height = document.getElementById('dictionarylist').style.height = main + 'px';
     } else {
         sidebar = main;
-        document.getElementById('dictionarylist').style.height = document.getElementById('main').style.height = sidebar + 'px'
+        document.getElementById('dictionarylist').style.height = document.getElementById('main').style.height = sidebar + 'px';
     }
 
 }
