@@ -13,7 +13,7 @@
     />
     <title>Document</title>
   </head>
-  <body onload="render()">
+  <body onload="render(); resizeDictionary();">
     <div class="layout">
       <header class="header_index">
         <span class="title">Dictionary</span>
@@ -26,11 +26,16 @@
           </ul>
         </nav>
       </header>
-      <main class="main_index">
+      <main class="main_index" id="main">
         <div class="main_index_content">
           <ul id="dictionarylist" class="dictionary_list"></ul>
         </div>
       </main>
+      <footer class="footer_index">
+        <div class="footer_index_content">
+          <span id="dictionaryItemsCount">0</span>
+        </div>
+      </footer>
     </div>
   </body>
   <script src="main.js"></script>
