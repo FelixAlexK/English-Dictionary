@@ -1,0 +1,9 @@
+{
+    "name": "English Dictionary",
+    "short_name": "Dictionary",
+    "theme_color": "#ff4500",
+    "background_color": "#242424",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/index.html"
+  }
