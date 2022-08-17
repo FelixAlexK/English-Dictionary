@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="layout">
-      <header class="header">
+      <header class="header_add">
         <span class="title">Add</span>
         <nav>
           <ul class="nav_links">
@@ -25,22 +25,24 @@
         </nav>
       </header>
       <main class="main_add">
-        <form class="form_text" onsubmit="add();" action="">
-          <input
-            class="deText"
-            id="deText"
-            type="text"
-            placeholder="German..."
-            required
-          />
-          <input
-            class="enText"
-            id="enText"
-            type="text"
-            placeholder="English..."
-          />
-          <button class="save_button">save</button>
-        </form>
+        <div class="add_content">
+          <form class="form_text" onsubmit="add();">
+            <input
+              class="deText"
+              id="deText"
+              type="text"
+              placeholder="German..."
+              required
+            />
+            <input
+              class="enText"
+              id="enText"
+              type="text"
+              placeholder="English..."
+            />
+            <button class="save_button">save</button>
+          </form>
+        </div>
       </main>
     </div>
   </body>
